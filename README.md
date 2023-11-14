@@ -1,4 +1,4 @@
-# VIDEO-GAME
+# Text-Based RPG-GAME
 This is my git repository containing code for my junior year Computer Graphics mini-project. It was collaborated together with Shanelle Hilda
 Text-Based RPG Adventure
 Welcome to the Text-Based RPG Adventure project! This is a simple and engaging text-based role-playing game where players embark on a thrilling journey filled with choices, challenges, and epic quests.

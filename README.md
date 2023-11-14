@@ -26,3 +26,5 @@ This project is inspired by a passion for game development and interactive story
 
 Enjoy your adventure in the Text-Based RPG world!
 
+Slides about the game can be found here [(https://docs.google.com/presentation/d/1CcJsxc9IGo0tGcTne6_Y5lwOJwREtEmYGvrxD3gqKSI/edit?usp=sharing)https://docs.google.com/presentation/d/1CcJsxc9IGo0tGcTne6_Y5
+

@@ -13,7 +13,7 @@ Expandable World: As the project progresses, we plan to introduce new story arcs
 Getting Started
 To run the game locally, follow these steps:
 
-Clone the Repository: git clone [(https://github.com/wendo69/VIDEO-GAME)]
+Clone the Repository: git clone [(https://github.com/wendo69/the-last-defender)]
 Navigate to the Project Directory: cd text-based-rpg-adventure
 Run the Game: python main.py
 Follow On-Screen Instructions: Interact with the game using simple commands and make decisions that impact your character's journey.

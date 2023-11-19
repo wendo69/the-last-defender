@@ -1,0 +1,11 @@
+{
+  "name": "text-based-rpg-game",
+  "version": "1.0.0",
+  "description": "Welcome to the Text-Based RPG Adventure project! This is a simple and engaging text-based role-playing game where players embark on a thrilling journey filled with choices, challenges, and epic quests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Last Defender</title>
+  <title>Omega Defender</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="base.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,16 +13,16 @@
   </script>
   <div class="container" id="container">
     <div class="ui">
-      <div class="quest-journal-layout">
-        <div class="quest-journal" id="quest-journal">
+      <div class="task-journal-layout">
+        <div class="task-journal" id="task-journal">
         </div>
       </div>
     </div>
     <div class="ui">
-      <div class="quest-ui-layout">
-        <div class="quest-ui" id="quest-ui">
-          <div class="quest-text-title" id="quest-text-title"></div>
-          <div class="quest-text" id="quest-text"></div>
+      <div class="task-ui-layout">
+        <div class="task-ui" id="task-ui">
+          <div class="task-text-title" id="task-text-title"></div>
+          <div class="task-text" id="task-text"></div>
         </div>
       </div>
     </div>
@@ -41,25 +41,25 @@
           <div class="stats-title">Statistics</div>
           <div class="stats-row">
             <div class="stats-tooltip">Strength
-              <div class="stats-tooltiptext">How strong you are, affects how much damage you do. So blah blah if you're doing stuff then its stronger or whatever, the damage is up. This is text to show the tooltip.</div>
+              <div class="stats-tooltiptext">How strong you are, affects how much damage you do. .</div>
             </div>
             <div id="stats-strength">0</div>
           </div>
           <div class="stats-row">
-            <div class="stats-tooltip">Wisdomness
-              <div class="stats-tooltiptext">Wisdom is the guage of something to do with wisdom in the game because wisdom is important and wisdom is wise to wisdoming.</div>
+            <div class="stats-tooltip">Defense
+              <div class="stats-tooltiptext"> Reduces the damage taken from monster attacks.</div>
             </div>
             <div id="stats-wisdomness">0</div>
           </div>
           <div class="stats-row">
-            <div class="stats-tooltip">Benchpress
-              <div class="stats-tooltiptext">Gotta have a good bench to be a warrior or something.</div>
+            <div class="stats-tooltip">Speed
+              <div class="stats-tooltiptext">Influences how quickly the player can move through the game world..</div>
             </div>
             <div id="stats-benchpress">0</div>
           </div>
           <div class="stats-row">
-            <div class="stats-tooltip">Curl
-              <div class="stats-tooltiptext">The ultimate expression of strength, this affects literally everything in your life.</div>
+            <div class="stats-tooltip">Stealth
+              <div class="stats-tooltiptext">Determines the player's ability to avoid or sneak past monsters.</div>
             </div>
             <div id="stats-curl">0</div>
           </div>
@@ -79,52 +79,52 @@
     </div>
     <div class="ui">
       <div class="inventory" id="inventory">
-        <div class="inventory-inner">
-          <div class="inventory-title">Inventory</div>
-          <div class="inventory-row">
-            <div class="inventory-column">
-              <div class="inventory-item" id="inventory-equip-1" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-2" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-3" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-4" draggable="true"></div>
+        <div class="weapons-inner">
+          <div class="weapons-title">Inventory</div>
+          <div class="weapons-row">
+            <div class="weapons-column">
+              <div class="weapons-item" id="inventory-equip-1" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-2" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-3" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-4" draggable="true"></div>
             </div>
             <div class="inventory-character"></div>
-            <div class="inventory-column">
-              <div class="inventory-item" id="inventory-equip-5" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-6" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-7" draggable="true"></div>
-              <div class="inventory-item" id="inventory-equip-8" draggable="true"></div>
+            <div class="weapons-column">
+              <div class="weapons-item" id="inventory-equip-5" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-6" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-7" draggable="true"></div>
+              <div class="weapons-item" id="inventory-equip-8" draggable="true"></div>
             </div>
           </div>
-          <div class="inventory-row">
-            <div class="inventory-item" id="inventory-1" draggable="true"></div>
-            <div class="inventory-item" id="inventory-2" draggable="true"></div>
-            <div class="inventory-item" id="inventory-3" draggable="true"></div>
-            <div class="inventory-item" id="inventory-4" draggable="true"></div>
-            <div class="inventory-item" id="inventory-5" draggable="true"></div>
-            <div class="inventory-item" id="inventory-6" draggable="true"></div>
-            <div class="inventory-item" id="inventory-7" draggable="true"></div>
-            <div class="inventory-item" id="inventory-8" draggable="true"></div>
+          <div class="weapons-row">
+            <div class="weapons-item" id="inventory-1" draggable="true"></div>
+            <div class="weapons-item" id="inventory-2" draggable="true"></div>
+            <div class="weapons-item" id="inventory-3" draggable="true"></div>
+            <div class="weapons-item" id="inventory-4" draggable="true"></div>
+            <div class="weapons-item" id="inventory-5" draggable="true"></div>
+            <div class="weapons-item" id="inventory-6" draggable="true"></div>
+            <div class="weapons-item" id="inventory-7" draggable="true"></div>
+            <div class="weapons-item" id="inventory-8" draggable="true"></div>
           </div>
-          <div class="inventory-row">
-            <div class="inventory-item" id="inventory-9" draggable="true"></div>
-            <div class="inventory-item" id="inventory-10" draggable="true"></div>
-            <div class="inventory-item" id="inventory-11" draggable="true"></div>
-            <div class="inventory-item" id="inventory-12" draggable="true"></div>
-            <div class="inventory-item" id="inventory-13" draggable="true"></div>
-            <div class="inventory-item" id="inventory-14" draggable="true"></div>
-            <div class="inventory-item" id="inventory-15" draggable="true"></div>
-            <div class="inventory-item" id="inventory-16" draggable="true"></div>
+          <div class="weapons-row">
+            <div class="weapons-item" id="inventory-9" draggable="true"></div>
+            <div class="weapons-item" id="inventory-10" draggable="true"></div>
+            <div class="weapons-item" id="inventory-11" draggable="true"></div>
+            <div class="weapons-item" id="inventory-12" draggable="true"></div>
+            <div class="weapons-item" id="inventory-13" draggable="true"></div>
+            <div class="weapons-item" id="inventory-14" draggable="true"></div>
+            <div class="weapons-item" id="inventory-15" draggable="true"></div>
+            <div class="weapons-item" id="inventory-16" draggable="true"></div>
           </div>
-          <div class="inventory-row">
-            <div class="inventory-item" id="inventory-17" draggable="true"></div>
-            <div class="inventory-item" id="inventory-18" draggable="true"></div>
-            <div class="inventory-item" id="inventory-19" draggable="true"></div>
-            <div class="inventory-item" id="inventory-20" draggable="true"></div>
-            <div class="inventory-item" id="inventory-21" draggable="true"></div>
-            <div class="inventory-item" id="inventory-22" draggable="true"></div>
-            <div class="inventory-item" id="inventory-23" draggable="true"></div>
-            <div class="inventory-item" id="inventory-24" draggable="true"></div>
+          <div class="weapons-row">
+            <div class="weapons-item" id="inventory-17" draggable="true"></div>
+            <div class="weapons-item" id="inventory-18" draggable="true"></div>
+            <div class="weapons-item" id="inventory-19" draggable="true"></div>
+            <div class="weapons-item" id="inventory-20" draggable="true"></div>
+            <div class="weapons-item" id="inventory-21" draggable="true"></div>
+            <div class="weapons-item" id="inventory-22" draggable="true"></div>
+            <div class="weapons-item" id="inventory-23" draggable="true"></div>
+            <div class="weapons-item" id="inventory-24" draggable="true"></div>
           </div>
         </div>
       </div>

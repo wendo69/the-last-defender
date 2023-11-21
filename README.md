@@ -2,7 +2,7 @@
 Welcome to "The Last Defender," a captivating RPG Adventure! In this game, players assume the role of the last hope for a village under siege, facing the imminent threat of enemy blobs. Prepare to make strategic decisions, engage in epic quests, and become the hero that the village desperately needs.
 
 Overview
-"The Last Defender" is implemented in Python, leveraging its versatility and simplicity. Whether you're a beginner or an RPG enthusiast, the game offers an accessible yet immersive experience, where your choices shape the outcome of the story.
+"The Last Defender" is implemented in Javascript HTML and css, leveraging its versatility and simplicity. Whether you're a beginner or an RPG enthusiast, the game offers an accessible yet immersive experience, where your choices shape the outcome of the story.
 
 
 

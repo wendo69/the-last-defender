@@ -27,11 +27,13 @@ class BasicWorldDemo {
     const aspect = 1920 / 1080;
     const near = 1.0;
     const far = 1000.0;
+    //creating perspective cam
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     this._camera.position.set(75, 20, 0);
 
+   //creating a 3d scene
     this._scene = new THREE.Scene();
-
+    //Adding Directional Light to the Scene:
     let light = new THREE.DirectionalLight(0xFFFFFF, 1.0);
     light.position.set(20, 100, 10);
     light.target.position.set(0, 0, 0);
@@ -48,15 +50,15 @@ class BasicWorldDemo {
     light.shadow.camera.top = 100;
     light.shadow.camera.bottom = -100;
     this._scene.add(light);
-
+    //Adding Ambient Light to the Scene:
     light = new THREE.AmbientLight(0x101010);
     this._scene.add(light);
-
+    //Adding OrbitControls for Camera Manipulation:
     const controls = new OrbitControls(
       this._camera, this._threejs.domElement);
     controls.target.set(0, 20, 0);
     controls.update();
-
+    //Loading Cube Texture for Scene Background:
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
         './resources/posx.jpg',
@@ -67,7 +69,7 @@ class BasicWorldDemo {
         './resources/negz.jpg',
     ]);
     this._scene.background = texture;
-
+    //Creating and Adding a Plane to the Scene
     const plane = new THREE.Mesh(
         new THREE.PlaneGeometry(100, 100, 10, 10),
         new THREE.MeshStandardMaterial({
@@ -77,7 +79,7 @@ class BasicWorldDemo {
     plane.receiveShadow = true;
     plane.rotation.x = -Math.PI / 2;
     this._scene.add(plane);
-
+    //Creating and Adding a Box to the Scene:
     const box = new THREE.Mesh(
       new THREE.BoxGeometry(2, 2, 2),
       new THREE.MeshStandardMaterial({
@@ -87,7 +89,7 @@ class BasicWorldDemo {
     box.castShadow = true;
     box.receiveShadow = true;
     this._scene.add(box);
-
+      //Creating and Adding Randomly Positioned Boxes to the Scene:
     for (let x = -8; x < 8; x++) {
       for (let y = -8; y < 8; y++) {
         const box = new THREE.Mesh(
@@ -113,16 +115,19 @@ class BasicWorldDemo {
     // box.castShadow = true;
     // box.receiveShadow = true;
     // this._scene.add(box);
-
+    
+    //Rendering the Scene:
     this._RAF();
   }
 
+  //Handling Window Resize
   _OnWindowResize() {
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
     this._threejs.setSize(window.innerWidth, window.innerHeight);
   }
 
+  //Rendering Animation Frame:Recursively calls the rendering loop using requestAnimationFrame, updating the scene in each frame.
   _RAF() {
     requestAnimationFrame(() => {
       this._threejs.render(this._scene, this._camera);
@@ -131,7 +136,7 @@ class BasicWorldDemo {
   }
 }
 
-
+//Creating an Instance of the Class on DOM Content Load
 let _APP = null;
 
 window.addEventListener('DOMContentLoaded', () => {

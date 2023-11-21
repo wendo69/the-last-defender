@@ -21,5 +21,3 @@ Acknowledgments
 Enjoy your adventure as "The Last Defender" and may the village find solace under your vigilant watch!
 
 
-Slides about the game can be found here. [(https://docs.google.com/presentation/d/1CcJsxc9IGo0tGcTne6_Y5lwOJwREtEmYGvrxD3gqKSI/edit?usp=sharing)https://docs.google.com/presentation/d/1CcJsxc9IGo0tGcTne6_Y5
-

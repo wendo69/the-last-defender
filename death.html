@@ -1,0 +1,72 @@
+<!-- death.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Defender - Game Over</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('./resources/background.jpg') center/cover no-repeat; /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .game-over-screen {
+      text-align: center;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c0392b;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="game-over-screen">
+    <h1>Game Over</h1>
+    <p>Unfortunately, you did not survive the battle.</p>
+    <p>Thank you for playing The Last Defender!</p>
+    <button onclick="retryGame()">Retry</button>
+  </div>
+  <script>
+    function retryGame() {
+      // Redirect to the start page (start.html) when the Retry button is clicked
+      window.location.href = 'start.html';
+    }
+  </script>
+</body>
+</html>

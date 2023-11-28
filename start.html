@@ -51,10 +51,14 @@ button:hover {
   </style>
 </head>
 <body>
+  <audio id="backgroundSound" autoplay loop>
+    <source src="./resources/background_sound.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
   <div class="start-screen">
     <h1>Welcome to The Last Defender</h1>
     <!-- Add any start screen content here -->
-    <button onclick="startGame()">Start Game</button>
+    <button onclick="startGame()">Play Game!</button>
   </div>
   <script>
     function startGame() {

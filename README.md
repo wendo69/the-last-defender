@@ -9,8 +9,15 @@ Overview
 HOW TO INSTALL:
 Clone the Repository: git clone https://github.com/wendo69/the-last-defender
 Navigate to the Project Directory: cd the-last-defender
-Run the Game: index.html
+Run the start screen of the Game: start.html
 Follow On-Screen Instructions: Interact with the game using simple commands and make decisions that impact your character's journey.
+
+CONTROLS:
+W: move forward
+A:move left
+S:move behind
+D:move right
+Space: Attack
 
 
 

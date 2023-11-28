@@ -67,6 +67,7 @@ export const player_entity = (() => {
     //sets the state machine to the 'death' state when the 'health.death' event is triggered.
     _OnDeath(msg) {
       this._stateMachine.SetState('death');
+      window.location.href = 'death.html';
     }
 
     _LoadModels() {

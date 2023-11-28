@@ -5,7 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Last Defender - Start Screen</title>
-  <!-- Add any necessary styles for your start screen here -->
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: url('./resources/background.jpg') center/cover no-repeat; /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-screen {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+  </style>
 </head>
 <body>
   <div class="start-screen">
